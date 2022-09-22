@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: flex;
   align-items: center;
-
+  height: 2.1rem;
   text-align: center;
   background-color: var(--white-2);
   width: 200px;
@@ -28,19 +28,9 @@ export const Container = styled.div`
     padding: 0.7rem 1rem;
     border-radius: 30px;
     width: 180px;
-    height: 1.8rem;
+    height: 2.1rem;
     transition: all ease-in-out 0.5s;
     margin-right: -18px;
-
-    /* &:hover,
-    &:focus {
-      box-shadow: 0 0 1em var(--black);
-    } */
-
-    /* &:focus {
-      outline: none;
-      background-color: var(--white-1);
-    } */
 
     &::-webkit-input-placeholder {
       font-weight: 100;

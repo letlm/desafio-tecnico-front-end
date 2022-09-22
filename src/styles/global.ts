@@ -45,6 +45,12 @@ export default createGlobalStyle`
 
     body {
         font-family: 'Poppins', sans-serif;
+        background: var(--primary-1);
+        background: linear-gradient(
+            90deg,
+            var(--primary-1) 52%,
+            var(--orange-3) 100%
+        )
     }
 
     button {
