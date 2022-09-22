@@ -1,15 +1,12 @@
-import { ReactNode } from "react";
 import { NavContainer } from "./styles";
 
-interface INavLink {
-  title: ReactNode;
-  path: string;
-}
-
-function Nav({ title, path }: INavLink) {
+function Nav() {
   return (
     <NavContainer>
-      <a href={path}>{title}</a>
+      <a href="#serviços">Serviços</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#serviços">Locação</a>
+      <a href="#serviços">Contato</a>
     </NavContainer>
   );
 }

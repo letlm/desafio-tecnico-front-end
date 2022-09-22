@@ -6,7 +6,7 @@ interface IModal {
 
 export const ModalContext = createContext({
   open: false,
-  setOpen: (open: false | true) => {},
+  setOpen: (value: false | true) => {},
 });
 
 function ModalProvider({ children }: IModal) {
