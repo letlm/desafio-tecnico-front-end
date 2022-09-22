@@ -1,4 +1,5 @@
 import DashboardView from "../../components/DashboardView";
+import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 
 function Home() {
@@ -8,6 +9,7 @@ function Home() {
       <main className="container">
         <DashboardView />
       </main>
+      <Footer />
     </>
   );
 }
