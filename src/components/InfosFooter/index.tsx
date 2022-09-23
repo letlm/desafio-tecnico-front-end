@@ -1,98 +1,117 @@
-import { Container, ContextCenter, ContextLeft, ContextRight } from "./styles";
 import { FaFacebookF, FaYoutube, FaInstagram } from "react-icons/fa";
-import { Link } from "react-router-dom";
+
 import Altatech from "../../assets/Altatech_logo_white.svg";
+import AltatechIcon from "../../assets/Altatech_icon_white.svg";
 
-import Backdrop from "@mui/material/Backdrop";
-import Box from "@mui/material/Box";
-import Modal from "@mui/material/Modal";
-import Fade from "@mui/material/Fade";
-import { useState } from "react";
-
-const style = {
-  position: "absolute" as "absolute",
-  top: "50%",
-  left: "50%",
-  transform: "translate(-50%, -50%)",
-  width: "80%",
-  height: 500,
-  bgcolor: "background.paper",
-  border: "8px solid #E87E21",
-  borderRadius: "16px",
-  display: "flex",
-  justifyContent: "center",
-  p: 4,
-  minWidth: 300,
-};
+import { Container } from "./styles";
+import { AiOutlineArrowRight } from "react-icons/ai";
+import ModalFooter from "../ModalFooter";
 
 function InfosFooter() {
-  const [open, setOpen] = useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
+  const handleClick = (url: string) => {
+    window.open(url);
+  };
   return (
     <Container>
-      <ContextLeft>
-        <section className="logo">
-          <img src={Altatech} alt="Altatech" />
-        </section>
-        <section className="company">
-          <h3>EMPRESA</h3>
-          <Link to="/about">Sobre</Link>
-          <Link to="/">Contato</Link>
-          <Link to="/about">LGPD</Link>
-
-          <button onClick={handleOpen}>Telefones</button>
-          <Modal
-            aria-labelledby="transition-modal-title"
-            aria-describedby="transition-modal-description"
-            open={open}
-            onClose={handleClose}
-            closeAfterTransition
-            BackdropComponent={Backdrop}
-            BackdropProps={{
-              timeout: 500,
-            }}
-          >
-            <Fade in={open}>
-              <Box sx={style}>
-                <span>Telephones uteis</span>
-              </Box>
-            </Fade>
-          </Modal>
-        </section>
-        <section className="useful">
-          <h3>ÚTEIS</h3>
-          <div className="dropdown">
-            <div className="dropbtn">Políticas</div>
-            <div className="dropdown-content">
-              <Link to="/">De Cancelamento</Link>
-              <Link to="/">De Cookies</Link>
-              <Link to="/">De Privacidade</Link>
-              <Link to="/">Comercial</Link>
-              <Link to="/">De Garantia</Link>
+      <section className="context">
+        <div className="infos">
+          <span className="title">Fique por dentro do que acontece aqui</span>
+          <div>
+            <span>Receba nossa newsletter</span>
+            <div className="newsletter">
+              <input
+                type="input"
+                required
+                className="input"
+                placeholder="Seu e-mail"
+              />
+              <button>
+                <AiOutlineArrowRight size={20} />
+              </button>
             </div>
           </div>
-          <Link to="/">Perguntas frequentes</Link>
-          <Link to="/">Termos de Uso</Link>
-          <Link to="/">Termo de Adesão Cloud</Link>
-        </section>
-      </ContextLeft>
-      <ContextCenter>
-        <span>De segunda a sexta-feira (08:00 às 18:00)</span>
-        <span>Av. Juscelino Kubitscheck, 1905 - Centro</span>
-        <span>86010-510 - Londrina, PR</span>
-      </ContextCenter>
-      <ContextRight>
-        <button>
-          <FaInstagram size={30} />
-        </button>
-        <button>
-          <FaFacebookF size={30} />
-        </button>
-        <button>
-          <FaYoutube size={30} />
-        </button>
-      </ContextRight>
+        </div>
+        <div className="img">
+          <img src={Altatech} alt="Altatech" />
+        </div>
+      </section>
+      <section className="useful">
+        <div className="image">
+          <img src={AltatechIcon} alt="Altatech" />
+        </div>
+
+        <div className="all">
+          <div className="left">
+            <span>
+              A segurança que sua empresa precisa e a confiança que você busca!
+            </span>
+            <span className="email">comercial@altatech.com.br</span>
+          </div>
+          <div className="center-left">
+            <a href="/">Sobre</a>
+            <a href="/">Contato</a>
+            <a href="/">LGPD</a>
+            <ModalFooter />
+          </div>
+          <div className="center-right">
+            <div className="dropdown">
+              <div className="dropbtn">Políticas</div>
+              <div className="content">
+                <a href="/" className="select">
+                  De Cancelamento
+                </a>
+                <a href="/" className="select">
+                  De Cookies
+                </a>
+                <a href="/" className="select">
+                  De Privacidade
+                </a>
+                <a href="/" className="select">
+                  Comercial
+                </a>
+                <a href="/" className="select">
+                  De Garantia
+                </a>
+              </div>
+            </div>
+            <a href="/">Perguntas frequentes</a>
+            <a href="/">Termos de uso e adesão</a>
+          </div>
+          <div className="right">
+            <div className="address">
+              <span>Segunda à sexta-feira</span>
+              <span>08:00 - 18:00</span>
+              <span>Av. Juscelino Kubitscheck, 1905</span>
+              <span>86010-510 - Londrina, PR</span>
+            </div>
+            <div className="social">
+              <button
+                onClick={() =>
+                  handleClick("https://www.instagram.com/altatech.solucoes/")
+                }
+              >
+                <FaInstagram size={30} />
+              </button>
+              <button
+                onClick={() =>
+                  handleClick("https://www.facebook.com/comercialaltatech/")
+                }
+              >
+                <FaFacebookF size={30} />
+              </button>
+              <button
+                onClick={() =>
+                  handleClick(
+                    "https://www.youtube.com/channel/UCiynHM_ky_aXo8bp5DTKtUw"
+                  )
+                }
+              >
+                <FaYoutube size={30} />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
     </Container>
   );
 }
