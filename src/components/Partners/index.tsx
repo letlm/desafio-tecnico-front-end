@@ -64,7 +64,7 @@ function Partners() {
             },
             {
               minWidth: 489,
-              maxWidth: 600,
+              maxWidth: 739,
               itemsToShow: 3,
               speed: 6000,
             },

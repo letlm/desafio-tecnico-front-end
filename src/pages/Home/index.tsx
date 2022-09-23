@@ -5,6 +5,7 @@ import MediaQuery from "react-responsive";
 import NavBar from "../../components/NavBar";
 import Estimate from "../../components/Estimate";
 import Partners from "../../components/Partners";
+import DashboardContent from "../../components/DashboardContent";
 
 function Home() {
   return (
@@ -17,8 +18,9 @@ function Home() {
       </MediaQuery>
       <main className="container">
         <DashboardView />
-        <Estimate />
+        <DashboardContent />
         <Partners />
+        <Estimate />
       </main>
       <Footer />
     </>
