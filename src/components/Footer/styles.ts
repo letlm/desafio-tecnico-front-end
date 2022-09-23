@@ -2,17 +2,23 @@ import styled from "styled-components";
 
 export const Container = styled.footer`
   width: 100%;
-  height: 30rem;
-  background-color: var(--primary-1);
+  background: var(--primary-1);
+  background: linear-gradient(
+    90deg,
+    var(--primary-1) 52%,
+    var(--orange-3) 100%
+  );
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const Line = styled.section`
   display: flex;
-  height: 15%;
+  height: 65px;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   width: 100%;
 
