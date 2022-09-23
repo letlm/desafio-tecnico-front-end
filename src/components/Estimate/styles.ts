@@ -2,28 +2,36 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
-  height: 700px;
-  background-color: var(--white-2);
+
+  background: var(--primary-1);
+  background: linear-gradient(
+    90deg,
+    var(--primary-1) 52%,
+    var(--orange-3) 100%
+  );
+
   display: flex;
   justify-content: center;
   align-items: center;
 
-  @media (min-width: 768px) {
-    height: 500px;
-  }
-
   .initial {
+    margin-top: -16rem;
     width: 80%;
-    height: 90%;
-    background-color: var(--orange-3);
+    height: 650px;
+    background-color: var(--white-2);
     border-radius: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
 
+    @media (min-width: 700px) {
+      margin-top: -11rem;
+      height: 500px;
+    }
+
     @media (min-width: 768px) {
-      height: 80%;
+      height: 380px;
     }
 
     span {
@@ -46,7 +54,7 @@ export const Container = styled.div`
       align-items: center;
       height: 100%;
 
-      @media (min-width: 768px) {
+      @media (min-width: 700px) {
         flex-direction: row;
         justify-content: center;
       }

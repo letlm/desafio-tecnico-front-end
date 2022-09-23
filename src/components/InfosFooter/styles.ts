@@ -1,9 +1,14 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+  margin-top: 1rem;
   width: 90%;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: 768px) {
+    margin-top: 8rem;
+  }
 
   .context {
     width: 100%;
