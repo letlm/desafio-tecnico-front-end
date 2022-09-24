@@ -6,6 +6,7 @@ import NavBar from "../../components/NavBar";
 import Estimate from "../../components/Estimate";
 import Partners from "../../components/Partners";
 import DashboardContent from "../../components/DashboardContent";
+import DashboardProducts from "../../components/DashboardProducts";
 
 function Home() {
   return (
@@ -19,6 +20,7 @@ function Home() {
       <main className="container">
         <DashboardView />
         <DashboardContent />
+        <DashboardProducts />
         <Partners />
         <Estimate />
       </main>
