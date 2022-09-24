@@ -7,6 +7,7 @@ export const Container = styled.header`
   align-items: center;
   justify-content: space-around;
   height: 5rem;
+  z-index: 9999;
   background: var(--primary-1);
   background: linear-gradient(
     90deg,

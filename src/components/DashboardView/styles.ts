@@ -32,11 +32,12 @@ export const Context = styled.div`
     width: 100%;
     height: 450px;
     background-color: var(--white-2);
-    border-radius: 1rem;
+    border-radius: 0.25rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: 2px solid var(--primary-3);
 
     .anime {
       width: 100%;
@@ -77,7 +78,8 @@ export const Context = styled.div`
 
       span {
         padding: 0.25rem;
-        color: var(--white-2);
+        color: var(--primary-3);
+        font-weight: 700;
         font-size: 1rem;
         font-family: "Poppins" sans-serif;
         letter-spacing: 1px;
@@ -102,7 +104,7 @@ export const Context = styled.div`
         font-family: "Poppins" sans-serif;
 
         :nth-child(1) {
-          border-radius: 1rem 1rem 0 0;
+          border-radius: 0.25rem 0.25rem 0 0;
           background-color: var(--primary-2);
         }
         :nth-child(2) {
@@ -112,7 +114,7 @@ export const Context = styled.div`
           background-color: var(--blue-1);
         }
         :nth-child(4) {
-          border-radius: 0 0 1rem 1rem;
+          border-radius: 0 0 0.25rem 0.25rem;
           background-color: var(--primary-3);
         }
       }
@@ -142,11 +144,11 @@ export const Context = styled.div`
           height: 144px;
 
           :nth-child(1) {
-            border-radius: 1rem 0 0 1rem;
+            border-radius: 0.25rem 0 0 0.25rem;
           }
 
           :nth-child(4) {
-            border-radius: 0 1rem 1rem 0;
+            border-radius: 0 0.25rem 0.25rem 0;
           }
         }
       }
