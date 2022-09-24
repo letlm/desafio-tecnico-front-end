@@ -23,36 +23,27 @@ function DashboardView() {
           <Carousel
             activeSlideIndex={activeSlide}
             onRequestChange={setActiveSlide}
-            forwardBtnProps={{
-              children: <span>{`>`}</span>,
-              style: {
-                alignSelf: "center",
-                background: "white",
-                border: "none",
-                borderRadius: "50%",
-                color: "black",
-                cursor: "pointer",
-                fontSize: "16px",
-                height: 20,
-                lineHeight: 1,
-                textAlign: "center",
-                width: 20,
+            dotsNav={{
+              show: true,
+              itemBtnProps: {
+                style: {
+                  height: 10,
+                  width: 10,
+                  borderRadius: "50%",
+                  border: 1,
+                  marginLeft: 5,
+                  background: "gray",
+                },
               },
-            }}
-            backwardBtnProps={{
-              children: <span>{`<`}</span>,
-              style: {
-                alignSelf: "center",
-                background: "white",
-                border: "none",
-                borderRadius: "50%",
-                color: "black",
-                cursor: "pointer",
-                fontSize: "16px",
-                height: 20,
-                lineHeight: 1,
-                textAlign: "center",
-                width: 20,
+              activeItemBtnProps: {
+                style: {
+                  height: 10,
+                  width: 10,
+                  borderRadius: "50%",
+                  border: 1,
+                  marginLeft: 5,
+                  background: "black",
+                },
               },
             }}
             itemsToShow={1}
