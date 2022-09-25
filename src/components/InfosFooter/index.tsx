@@ -11,6 +11,7 @@ function InfosFooter() {
   const handleClick = (url: string) => {
     window.open(url);
   };
+
   return (
     <Container>
       <section className="context">
@@ -48,7 +49,7 @@ function InfosFooter() {
             <span className="email">comercial@altatech.com.br</span>
           </div>
           <div className="center-left">
-            <a href="/">Sobre</a>
+            <a href="/about">Sobre</a>
             <a href="/">Contato</a>
             <a href="/">LGPD</a>
             <ModalFooter />
