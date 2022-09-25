@@ -7,11 +7,12 @@ export const Container = styled.div`
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background: var(--primary-1);
+  background: var(--primary-3);
   background: linear-gradient(
     90deg,
-    var(--primary-1) 52%,
-    var(--orange-3) 100%
+    var(--primary-3) 5%,
+    var(--primary-1) 43%,
+    var(--blue-1) 100%
   );
 
   @media (min-width: 1000px) {
@@ -32,12 +33,17 @@ export const Context = styled.div`
     width: 100%;
     height: 450px;
     background-color: var(--white-2);
-    border-radius: 0.25rem;
+    border-radius: 0.1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px solid var(--primary-3);
+    border: 1px solid var(--white-2);
+    transition: 0.5s;
+
+    &:hover {
+      box-shadow: 10px 10px 69px -2px var(--primary-2);
+    }
 
     .anime {
       width: 100%;
@@ -48,7 +54,7 @@ export const Context = styled.div`
 
       span {
         width: 90%;
-        font-family: "Poppins" sans-serif;
+        font-family: "Poppins", sans-serif;
         letter-spacing: 2px;
         font-weight: 500;
         font-size: 1rem;
@@ -78,10 +84,10 @@ export const Context = styled.div`
 
       span {
         padding: 0.25rem;
-        color: var(--primary-3);
-        font-weight: 700;
-        font-size: 1rem;
-        font-family: "Poppins" sans-serif;
+        color: var(--white-2);
+        font-weight: 400;
+        font-size: 1.1rem;
+        font-family: "Poppins", sans-serif;
         letter-spacing: 1px;
       }
     }
@@ -101,20 +107,20 @@ export const Context = styled.div`
         color: var(--white-2);
         font-size: 0.9rem;
         word-wrap: break-word;
-        font-family: "Poppins" sans-serif;
+        font-family: "Poppins", sans-serif;
 
         :nth-child(1) {
-          border-radius: 0.25rem 0.25rem 0 0;
-          background-color: var(--primary-2);
+          border-radius: 0.1rem 0.1rem 0 0;
+          background-color: var(--blue-1);
         }
         :nth-child(2) {
           background-color: var(--blue-2);
         }
         :nth-child(3) {
-          background-color: var(--blue-1);
+          background-color: var(--primary-1);
         }
         :nth-child(4) {
-          border-radius: 0 0 0.25rem 0.25rem;
+          border-radius: 0 0 0.1rem 0.1rem;
           background-color: var(--primary-3);
         }
       }
@@ -144,11 +150,11 @@ export const Context = styled.div`
           height: 144px;
 
           :nth-child(1) {
-            border-radius: 0.25rem 0 0 0.25rem;
+            border-radius: 0.1rem 0 0 0.1rem;
           }
 
           :nth-child(4) {
-            border-radius: 0 0.25rem 0.25rem 0;
+            border-radius: 0 0.1rem 0.1rem 0;
           }
         }
       }
@@ -195,13 +201,13 @@ export const Line = styled.div`
     margin-bottom: 10px;
     background-color: transparent;
     border: none;
-    color: var(--orange-2);
+    color: var(--blue-2);
     z-index: 2000;
     transition: 0.5s;
 
     &:hover {
       transform: scale(1.5);
-      color: var(--orange-2);
+      color: var(--blue-1);
     }
   }
 
@@ -213,13 +219,13 @@ export const Line = styled.div`
     margin-bottom: 10px;
     background-color: transparent;
     border: none;
-    color: var(--orange-2);
+    color: var(--blue-2);
     z-index: 2000;
     transition: 0.5s;
 
     &:hover {
       transform: scale(1.4);
-      color: var(--orange-2);
+      color: var(--blue-1);
     }
   }
 `;

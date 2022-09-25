@@ -17,7 +17,7 @@ export const Container = styled.div`
     margin-bottom: 4rem;
     width: 98%;
     height: 90%;
-    background-color: var(--primary-1);
+    background-color: var(--white-2);
     border-radius: 0.25rem;
     display: flex;
     align-items: center;
@@ -27,26 +27,9 @@ export const Container = styled.div`
       width: 90%;
     }
 
-    .some {
-      font-family: "Poppins", sans-serif;
-      font-size: 1.5rem;
-      font-weight: 200;
-      width: 100%;
-      height: 65px;
-      background-color: var(--primary-3);
-      text-align: center;
-      color: var(--white-2);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      @media (min-width: 500px) {
-        font-size: 2rem;
-      }
-    }
-
     .products {
       margin-top: 3rem;
+      width: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -56,29 +39,31 @@ export const Container = styled.div`
       margin-bottom: 3rem;
     }
 
-    .more {
-      margin-bottom: 3rem;
-      width: 180px;
-      height: 35px;
-      font-size: 0.9rem;
-      background-color: var(--primary-3);
-      border: none;
-      color: var(--white-2);
-      z-index: 1;
-      overflow: hidden;
-      position: relative;
-      font-family: "Poppins", sans-serif;
+    .btnMore {
+      width: 100%;
+
+      .more {
+        width: 180px;
+        height: 35px;
+        font-size: 0.9rem;
+        background-color: var(--primary-3);
+        border: none;
+        color: var(--white-2);
+        z-index: 1;
+        overflow: hidden;
+        position: relative;
+        font-family: "Poppins", sans-serif;
+      }
     }
 
     button:hover {
       background-color: var(--primary-2);
-      color: var(--primary-3);
       border: 1px solid var(--primary-3);
     }
 
     button:after {
       content: "";
-      background: var(--white-2);
+      background: var(--primary-1);
       position: absolute;
       z-index: -1;
       left: -20%;
@@ -103,7 +88,8 @@ export const ContextProducts = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--white-1);
+  background-color: var(--white-2);
+  border: 1px solid var(--primary-3);
   transition: 0.5s;
 
   &:hover {
@@ -169,14 +155,14 @@ export const ContextProducts = styled.div`
   }
 
   button:hover {
-    background-color: var(--white-2);
+    background-color: var(--white-3);
     color: var(--primary-3);
     border: 1px solid var(--primary-3);
   }
 
   button:after {
     content: "";
-    background: var(--primary-2);
+    background: var(--white-3);
     position: absolute;
     z-index: -1;
     left: -20%;

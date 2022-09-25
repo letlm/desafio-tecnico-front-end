@@ -22,11 +22,11 @@ export const Container = styled.div`
 
     .title {
       width: 100%;
-      font-family: "Poppins" sans-serif;
+      font-family: "Poppins", sans-serif;
       font-weight: 600;
       text-align: center;
       letter-spacing: 1px;
-      color: var(--orange-3);
+      color: var(--blue-1);
       font-size: 1.4rem;
     }
   }

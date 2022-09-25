@@ -29,12 +29,18 @@ function Estimate() {
           <div className="form">
             <form onSubmit={handleSubmit(toastDisplay)}>
               <div>
-                <input type="text" {...register("name")} placeholder="Nome" />
+                <input
+                  type="text"
+                  {...register("name")}
+                  placeholder="Nome"
+                  required
+                />
 
                 <input
                   type="email"
                   {...register("email")}
                   placeholder="E-mail"
+                  required
                 />
               </div>
               <div>
@@ -42,14 +48,21 @@ function Estimate() {
                   type="tel"
                   {...register("phone")}
                   placeholder="Telefone"
+                  required
                 />
 
-                <input type="number" {...register("cnpj")} placeholder="CNPJ" />
+                <input
+                  type="number"
+                  {...register("cnpj")}
+                  placeholder="CNPJ"
+                  required
+                />
               </div>
               <textarea
                 {...register("message")}
                 placeholder="Mensagem"
                 className="message"
+                required
               />
               <button>Solicitar</button>
             </form>

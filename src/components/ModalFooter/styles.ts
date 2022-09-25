@@ -7,6 +7,6 @@ export const Container = styled.div`
     background-color: transparent;
     border: none;
     font-size: 1rem;
-    font-family: "Poppins" sans-serif;
+    font-family: "Poppins", sans-serif;
   }
 `;

@@ -5,8 +5,8 @@ function DashboardProducts() {
   return (
     <Container>
       <section>
-        <div className="some">
-          <span>Alguns de nossos produtos</span>
+        <div className="btnMore">
+          <button className="more">Ver todos os produtos</button>
         </div>
         <div className="products">
           <Products
@@ -52,7 +52,6 @@ function DashboardProducts() {
             more="Solicitar orçamento"
           />
         </div>
-        <button className="more">Ver todos</button>
       </section>
     </Container>
   );
