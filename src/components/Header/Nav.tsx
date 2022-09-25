@@ -6,7 +6,7 @@ function Nav() {
       <a href="#serviços">Serviços</a>
       <a href="#produtos">Produtos</a>
       <a href="#serviços">Locação</a>
-      <a href="#serviços">Contato</a>
+      <a href="/contact">Contato</a>
     </NavContainer>
   );
 }
