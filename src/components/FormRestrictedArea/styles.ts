@@ -22,20 +22,19 @@ export const Container = styled.div`
     button {
       border: none;
       background-color: transparent;
-      font-family: "Poppins" sans-serif;
+      font-family: "Poppins", sans-serif;
       font-size: 0.9rem;
     }
 
     span,
     a {
-      font-family: "Poppins" sans-serif;
+      font-family: "Poppins", sans-serif;
       font-size: 0.8rem;
     }
   }
 `;
 
 export const ContainerForm = styled.form`
-  width: 100%;
   height: 200px;
   display: flex;
   flex-direction: column;
@@ -43,13 +42,13 @@ export const ContainerForm = styled.form`
   align-items: center;
 
   input {
-    padding: 10px;
+    padding: 0.5rem;
     border: none;
-    border-radius: 30px;
+    border-radius: 0.2rem;
     background-color: var(--yellow-2);
-    font-family: "Poppins" sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 0.9rem;
-
+    width: 100%;
     transition: all ease-in-out 0.5s;
 
     &::-webkit-input-placeholder {
@@ -59,12 +58,12 @@ export const ContainerForm = styled.form`
   }
 
   button {
-    padding: 10px;
+    padding: 0.5rem;
     border: none;
-    border-radius: 30px;
-    width: 100px;
+    border-radius: 0.2rem;
+    width: 150px;
     transition: 0.5s;
-    font-family: "Poppins" sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 0.9rem;
 
     &:hover {

@@ -63,8 +63,26 @@ export default createGlobalStyle`
     .container {
         width: 100%;
         margin: 0 auto;
-
         min-width: 300px;
         padding: 0 1 rem;
     }
+
+    .toastify-color-progress-light {
+        font-family: "Poppins", sans-serif;
+        font-size: 1rem;
+        background-color: var(--white-2);
+        box-shadow: 10px 10px 69px -2px rgba(9,9,8,0.47);
+        color: var(--primary-3);
+        z-index: 9999;
+    }
+
+    .Toastify__progress-bar-theme--light {
+        background: var(--primary-1);
+    }
+
+    .children {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 `;

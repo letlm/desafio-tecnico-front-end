@@ -10,7 +10,7 @@ function Estimate() {
 
   const toastDisplay = () => {
     setTimeout(() => {
-      toast("✨ Orçamento solicitado! Entraremos em breve em contato!", {
+      toast("📋 Orçamento solicitado! Entraremos em breve em contato!", {
         className: "toastify-color-progress-light",
       });
       setValue("name", "");

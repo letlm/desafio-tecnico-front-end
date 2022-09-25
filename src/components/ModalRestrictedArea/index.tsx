@@ -18,9 +18,10 @@ const style = {
   height: 400,
   bgcolor: "background.paper",
   border: "8px solid #E87E21",
-  borderRadius: "16px",
+  borderRadius: "0.1rem",
   display: "flex",
   justifyContent: "center",
+  alignItems: "center",
   p: 4,
   minWidth: 300,
 };
@@ -42,7 +43,7 @@ function ModalRestrictedArea({ children }: IModal) {
     >
       <Fade in={open}>
         <Box sx={style}>
-          <div>{children}</div>
+          <div className="children">{children}</div>
         </Box>
       </Fade>
     </Modal>
