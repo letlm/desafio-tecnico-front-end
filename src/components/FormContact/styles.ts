@@ -1,4 +1,28 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const appearFromRight = keyframes`
+ 0% {
+		opacity: 0;
+		transform: translateX(250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+`;
+
+const appearFromLeft = keyframes`
+ 0% {
+		opacity: 0;
+		transform: translateX(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+`;
 
 export const Container = styled.div`
   width: 100%;
@@ -16,6 +40,7 @@ export const Container = styled.div`
     width: 100%;
     height: 400px;
     background-color: var(--white-2);
+    animation: ${appearFromRight} 2s ease 0s 1 normal forwards;
   }
 
   @media (min-width: 768px) {
@@ -39,6 +64,7 @@ export const ContainerForm = styled.form`
   gap: 0rem;
   background-color: var(--primary-1);
   align-items: center;
+  animation: ${appearFromLeft} 2s ease 0s 1 normal backwards;
 
   @media (min-width: 630px) {
     height: 400px;

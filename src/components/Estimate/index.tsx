@@ -22,7 +22,7 @@ function Estimate() {
   };
 
   return (
-    <Container>
+    <Container data-aos="fade-right" data-aos-duration="1000">
       <section className="initial">
         <span>Solicite seu orçamento!</span>
         <div className="section">

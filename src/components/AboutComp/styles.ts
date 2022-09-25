@@ -1,4 +1,40 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const appearFromRight = keyframes`
+ 0% {
+		opacity: 0;
+		transform: translateX(250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+`;
+
+const appearFromLeft = keyframes`
+ 0% {
+		opacity: 0;
+		transform: translateX(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+`;
+
+const appearFromCenter = keyframes`
+0% {
+		opacity: 0;
+		transform: scale(0.6);
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+`;
 
 export const Container = styled.div`
   width: 100%;
@@ -24,6 +60,7 @@ export const ContainerAbout = styled.section`
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    animation: ${appearFromLeft} 2s ease 0s 1 normal backwards;
 
     div {
       width: 70%;
@@ -56,6 +93,7 @@ export const ContainerAbout = styled.section`
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    animation: ${appearFromRight} 2s ease 0s 1 normal forwards;
 
     div {
       width: 70%;
@@ -120,6 +158,7 @@ export const ContainerPrizes = styled.section`
   margin-top: 8rem;
   margin-bottom: 8rem;
   background-color: var(--white-2);
+  animation: ${appearFromCenter} 1s ease 0s 1 normal backwards;
 
   div {
     display: flex;

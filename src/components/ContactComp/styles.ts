@@ -1,4 +1,16 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const appearFromCenter = keyframes`
+0% {
+		opacity: 0;
+		transform: scale(0.6);
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+`;
 
 export const Container = styled.div`
   width: 100%;
@@ -54,6 +66,13 @@ export const Container = styled.div`
         font-family: "Poppins", sans-serif;
         font-size: 1rem;
         background-color: var(--white-2);
+        animation: ${appearFromCenter} 1s ease 0s 1 normal backwards;
+
+        &:hover {
+          &:hover {
+            box-shadow: 10px 10px 69px -2px var(--primary-3);
+          }
+        }
       }
     }
   }
