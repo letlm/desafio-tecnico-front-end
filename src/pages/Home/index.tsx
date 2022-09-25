@@ -7,8 +7,14 @@ import Estimate from "../../components/Estimate";
 import Partners from "../../components/Partners";
 import DashboardContent from "../../components/DashboardContent";
 import DashboardProducts from "../../components/DashboardProducts";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function Home() {
+  useEffect(() => {
+    Aos.init({ disable: false });
+  }, []);
   return (
     <>
       <MediaQuery maxWidth={767}>

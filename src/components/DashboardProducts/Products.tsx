@@ -10,7 +10,7 @@ interface IProducts {
 
 function Products({ title, description, img, more, price }: IProducts) {
   return (
-    <ContextProducts>
+    <ContextProducts data-aos="zoom-in-down" data-aos-duration="1000">
       <span className="title">{title}</span>
       <div className="img">
         <ProductImg imgUrl={img} />

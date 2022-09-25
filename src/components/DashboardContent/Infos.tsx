@@ -9,7 +9,7 @@ interface IInfos {
 
 function Infos({ title, subtitle, img, more }: IInfos) {
   return (
-    <ContextInfos imgUrl={img}>
+    <ContextInfos imgUrl={img} data-aos="flip-left" data-aos-duration="1000">
       <div className="sob">
         <div className="text">
           <span className="title">{title}</span>

@@ -1,4 +1,16 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const appearFromLeft = keyframes`
+    0% {
+		opacity: 0;
+		transform: translateX(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+`;
 
 export const Container = styled.div`
   width: 100%;
@@ -28,6 +40,7 @@ export const Context = styled.div`
   flex-direction: column-reverse;
   align-items: center;
   justify-content: space-evenly;
+  animation: ${appearFromLeft} 2s ease 0s 1 normal forwards;
 
   .animation {
     width: 100%;
@@ -96,6 +109,7 @@ export const Context = styled.div`
       width: 100%;
       display: flex;
       flex-direction: column;
+      animation: ${appearFromLeft} 2s ease 0s 1 normal forwards;
 
       span {
         width: 100%;

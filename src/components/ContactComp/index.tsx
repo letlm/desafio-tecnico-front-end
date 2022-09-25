@@ -10,7 +10,7 @@ function ContactComp() {
       <div className="oters">
         <div>
           <span>
-            Caso prefira, envie seu contato para{" "}
+            Caso prefira, envie seu contato para
             <a href={email}>comercial@altatech.com.br</a>
           </span>
           <span>

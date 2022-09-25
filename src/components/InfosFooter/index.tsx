@@ -1,4 +1,9 @@
-import { FaFacebookF, FaYoutube, FaInstagram } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaYoutube,
+  FaInstagram,
+  FaLinkedin,
+} from "react-icons/fa";
 
 import Altatech from "../../assets/Altatech_logo_white.svg";
 import AltatechIcon from "../../assets/Altatech_icon_white.svg";
@@ -108,6 +113,16 @@ function InfosFooter() {
                 }
               >
                 <FaYoutube size={30} />
+              </button>
+
+              <button
+                onClick={() =>
+                  handleClick(
+                    "https://www.linkedin.com/company/altatech-solucoes/"
+                  )
+                }
+              >
+                <FaLinkedin size={30} />
               </button>
             </div>
           </div>
