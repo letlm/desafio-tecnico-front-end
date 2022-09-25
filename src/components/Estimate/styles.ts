@@ -123,7 +123,7 @@ export const Container = styled.div`
           width: 80%;
           border: none;
           padding: 0.8rem;
-          border-radius: 0.5rem;
+          border-radius: 0.1rem;
           font-family: "Poppins", sans-serif;
           font-size: 1rem;
           transition: 0.5s;

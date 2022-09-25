@@ -60,20 +60,77 @@ export const ContextInfos = styled.div<ImgDivs>`
     }
 
     button {
-      width: 40%;
+      width: 200px;
       height: 45px;
       background-color: var(--primary-1);
       border: 1px solid var(--primary-1);
       color: var(--white-2);
       font-size: 1rem;
       font-weight: 400;
-      border-radius: 0.3rem;
+      border-radius: 0.2rem;
       font-family: "Poppins", sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      position: relative;
+
+      letter-spacing: 1px;
+
+      text-transform: uppercase;
 
       @media (min-width: 420px) {
         font-size: 1rem;
+      }
+
+      @media (min-width: 730px) {
         width: 30%;
       }
+    }
+
+    button::before {
+      content: "";
+      border-radius: 5px;
+      display: block;
+      position: absolute;
+      z-index: 0;
+      bottom: 0;
+      left: 0;
+      height: 0px;
+      width: 100%;
+      background: var(--primary-1);
+      background: linear-gradient(
+        90deg,
+        var(--primary-3) 52%,
+        var(--orange-3) 100%
+      );
+      transition: 0.2s;
+    }
+
+    button .btnText {
+      position: relative;
+    }
+
+    button .icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 3em;
+      width: 3em;
+      position: absolute;
+      top: 3em;
+      right: 0;
+      opacity: 0;
+      transition: 0.4s;
+    }
+
+    button:hover::before {
+      height: 100%;
+    }
+
+    button:hover .icon {
+      top: 0;
+      opacity: 1;
     }
   }
 `;
