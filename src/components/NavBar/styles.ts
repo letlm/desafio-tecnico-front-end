@@ -5,6 +5,7 @@ export const Container = styled.aside`
   display: flex;
   justify-content: center;
   position: fixed;
+  z-index: 9999;
 
   section {
     width: 90%;
@@ -31,7 +32,13 @@ export const Container = styled.aside`
 export const Box = styled.div`
   width: 80vw;
   height: 100vh;
-  background: var(--primary-1);
+  background: var(--primary-3);
+  background: linear-gradient(
+    90deg,
+    var(--primary-3) 5%,
+    var(--primary-1) 43%,
+    var(--blue-1) 100%
+  );
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -66,6 +73,7 @@ export const Box = styled.div`
         transition: transform 0.5s ease;
 
         &:hover {
+          color: var(--primary-3);
           -webkit-transform: scale(1.2);
           transform: scale(1.2);
         }

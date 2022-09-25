@@ -43,7 +43,7 @@ function InfosFooter() {
 
         <div className="all">
           <div className="left">
-            <span>
+            <span className="secutiry">
               A segurança que sua empresa precisa e a confiança que você busca!
             </span>
             <span className="email">comercial@altatech.com.br</span>

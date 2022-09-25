@@ -8,11 +8,12 @@ export const Container = styled.header`
   justify-content: space-around;
   height: 5rem;
   z-index: 1000;
-  background: var(--primary-1);
+  background: var(--primary-3);
   background: linear-gradient(
     90deg,
-    var(--primary-1) 52%,
-    var(--orange-3) 100%
+    var(--primary-3) 5%,
+    var(--primary-1) 43%,
+    var(--blue-1) 100%
   );
 
   ul {
@@ -24,6 +25,11 @@ export const Container = styled.header`
 
     img {
       width: 35px;
+
+      &:hover {
+        cursor: pointer;
+        transition: 0.5s;
+      }
     }
 
     .header {
@@ -39,7 +45,7 @@ export const Container = styled.header`
       color: var(--white-2);
 
       &:hover {
-        color: var(--primary-2);
+        color: var(--primary-3);
         transition: 0.5s;
       }
     }
@@ -54,13 +60,13 @@ export const NavContainer = styled.li`
   align-items: center;
 
   a {
-    color: var(--white-2);
+    color: var(--primary-2);
     transition: 0.5s;
     margin-bottom: 2rem;
     font-size: 1.5rem;
 
     &:hover {
-      color: var(--primary-2);
+      color: var(--primary-3);
       transition: 0.5s;
     }
   }

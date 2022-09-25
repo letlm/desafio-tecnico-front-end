@@ -17,7 +17,7 @@ const style = {
   width: "310",
   height: 400,
   bgcolor: "background.paper",
-  border: "8px solid #E87E21",
+  border: "8px solid #5198C7",
   borderRadius: "0.1rem",
   display: "flex",
   justifyContent: "center",

@@ -29,10 +29,10 @@ export const Container = styled.div`
       }
 
       .title {
-        font-family: "Poppins" sans-serif;
+        font-family: "Poppins", sans-serif;
         font-weight: 500;
         font-size: 1rem;
-        color: var(--orange-3);
+        color: var(--white-1);
         text-transform: uppercase;
         letter-spacing: 4px;
       }
@@ -43,9 +43,9 @@ export const Container = styled.div`
         flex-direction: column;
 
         span {
-          color: var(--black);
-          font-family: "Poppins" sans-serif;
-          font-weight: 600;
+          color: var(--white-3);
+          font-family: "Poppins", sans-serif;
+          font-weight: 400;
           font-size: 1.2rem;
         }
 
@@ -65,7 +65,7 @@ export const Container = styled.div`
             background: transparent;
 
             &::placeholder {
-              color: var(--orange-3);
+              color: var(--blue-1);
             }
 
             @media (min-width: 768px) {
@@ -76,7 +76,7 @@ export const Container = styled.div`
           button {
             border: none;
             background-color: transparent;
-            color: var(--orange-3);
+            color: var(--blue-1);
           }
         }
       }
@@ -138,7 +138,11 @@ export const Container = styled.div`
       span {
         width: 100%;
         font-size: 1rem;
-        font-family: "Poppins" sans-serif;
+        font-family: "Poppins", sans-serif;
+      }
+
+      .secutiry {
+        color: var(--white-2);
       }
 
       .email {
@@ -161,7 +165,7 @@ export const Container = styled.div`
       a {
         color: var(--black);
         font-size: 1rem;
-        font-family: "Poppins" sans-serif;
+        font-family: "Poppins", sans-serif;
       }
 
       @media (min-width: 768px) {
@@ -179,7 +183,7 @@ export const Container = styled.div`
       a {
         color: var(--black);
         font-size: 1rem;
-        font-family: "Poppins" sans-serif;
+        font-family: "Poppins", sans-serif;
       }
 
       .dropdown {
@@ -191,7 +195,7 @@ export const Container = styled.div`
         position: absolute;
         width: 180px;
         border-radius: 0 1rem 1rem 1rem;
-        background-color: var(--orange-1);
+        background-color: var(--blue-1);
         z-index: 1;
         height: 150px;
       }
@@ -207,7 +211,7 @@ export const Container = styled.div`
 
       .content .select:hover {
         font-weight: 900;
-        background-color: var(--grey-0);
+        background-color: var(--blue-2);
         transition: 0.5s;
       }
 
@@ -233,7 +237,7 @@ export const Container = styled.div`
         span {
           color: var(--black);
           font-size: 1rem;
-          font-family: "Poppins" sans-serif;
+          font-family: "Poppins", sans-serif;
         }
       }
 

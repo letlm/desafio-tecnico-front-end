@@ -45,7 +45,7 @@ export const ContainerForm = styled.form`
     padding: 0.5rem;
     border: none;
     border-radius: 0.2rem;
-    background-color: var(--yellow-2);
+    background-color: var(--blue-1);
     font-family: "Poppins", sans-serif;
     font-size: 0.9rem;
     width: 100%;
@@ -65,10 +65,12 @@ export const ContainerForm = styled.form`
     transition: 0.5s;
     font-family: "Poppins", sans-serif;
     font-size: 0.9rem;
+    background-color: var(--primary-1);
+    color: var(--white-1);
 
     &:hover {
       color: var(--white-1);
-      background-color: var(--primary-1);
+      background-color: var(--primary-3);
       cursor: pointer;
     }
   }

@@ -39,7 +39,7 @@ export const ContainerTel = styled.div`
   }
 
   .number {
-    background-color: var(--yellow-1);
+    background-color: var(--blue-1);
     border-radius: 0.25rem;
   }
 `;

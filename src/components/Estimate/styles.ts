@@ -2,14 +2,13 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
-
-  background: var(--primary-1);
+  background: var(--primary-3);
   background: linear-gradient(
     90deg,
-    var(--primary-1) 52%,
-    var(--orange-3) 100%
+    var(--primary-3) 5%,
+    var(--primary-1) 43%,
+    var(--blue-1) 100%
   );
-
   display: flex;
   justify-content: center;
   align-items: center;

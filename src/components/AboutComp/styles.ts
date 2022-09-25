@@ -52,7 +52,7 @@ export const ContainerAbout = styled.section`
     width: 100%;
     height: 400px;
     display: flex;
-    background-color: var(--orange-3);
+    background-color: var(--blue-1);
     justify-content: center;
     flex-direction: column;
     align-items: center;
