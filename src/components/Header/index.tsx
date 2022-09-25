@@ -15,7 +15,7 @@ function Header() {
   const handleOpen = () => setOpen(true);
   const history = useHistory();
 
-  const handleHome = (path: string) => {
+  const handleClick = (path: string) => {
     return history.push(path);
   };
 
@@ -28,7 +28,7 @@ function Header() {
   return (
     <Container>
       <ul>
-        <button onClick={() => handleHome("/")}>
+        <button onClick={() => handleClick("/")}>
           <img src={IconAltatech} alt="Altatech Icon" />
         </button>
         <div className="header">
