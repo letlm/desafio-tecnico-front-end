@@ -27,28 +27,28 @@ function DashboardProducts() {
             title="82ME0000BR"
             description="Notebook Lenovo V15 I5-1135G7 8GB 256 SSD W10P - 82ME0000BR"
             price="Sob consulta"
-            img="https://i.imgur.com/9OcC0ju.png"
+            img="https://i.imgur.com/6HgNfNL.png"
             more="Solicitar orçamento"
           />
           <Products
             title="82NQ0007BR"
             description="Notebook Lenovo V15 I3-10110U 4GB 500GB FreeDOS 82NQ0007BR"
             price="Sob consulta"
-            img="https://i.imgur.com/JCGviNx.png"
+            img="https://i.imgur.com/lghR1yk.png"
             more="Solicitar orçamento"
           />
           <Products
             title="SMC3000XLI-BR"
             description="APC Smart-UPS BR 3000VA, 220V, Brazil"
             price="Sob consulta"
-            img="https://i.imgur.com/OIIz50z.png"
+            img="https://i.imgur.com/EEfZlDn.png"
             more="Solicitar orçamento"
           />
           <Products
             title="SMC1500XLBI-BR"
             description="APC Nobreak SmartUPS 1500VA 1050W (Entrada 115/220V, Saida 115V) USB, Expansível, com 8 tomadas NBR 14136"
             price="Sob consulta"
-            img="https://i.imgur.com/ILlqzqL.png"
+            img="https://i.imgur.com/hfHRPtY.png"
             more="Solicitar orçamento"
           />
         </div>
