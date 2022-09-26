@@ -54,7 +54,7 @@ export const ContainerAbout = styled.section`
 
   .initial {
     width: 100%;
-    height: 550px;
+    height: 600px;
     display: flex;
     background-color: var(--white-2);
     justify-content: center;
@@ -79,7 +79,7 @@ export const ContainerAbout = styled.section`
       width: 70%;
       font-family: "Poppins", sans-serif;
       font-weight: 400;
-      font-size: 1.2rem;
+      font-size: 1rem;
       color: var(--primary-3);
       margin-bottom: 2rem;
     }
@@ -87,7 +87,7 @@ export const ContainerAbout = styled.section`
 
   .finale {
     width: 100%;
-    height: 400px;
+    height: 650px;
     display: flex;
     background-color: var(--blue-1);
     justify-content: center;
@@ -96,18 +96,14 @@ export const ContainerAbout = styled.section`
     animation: ${appearFromRight} 2s ease 0s 1 normal forwards;
 
     div {
-      width: 70%;
-      height: 0;
-      display: flex;
-      justify-content: flex-start;
-      margin-top: 0rem;
+      margin-top: 2.2rem;
     }
 
     span {
       width: 70%;
       font-family: "Poppins", sans-serif;
       font-weight: 400;
-      font-size: 1.2rem;
+      font-size: 1rem;
       color: var(--primary-3);
       margin-bottom: 1rem;
     }
@@ -135,11 +131,6 @@ export const ContainerAbout = styled.section`
     .finale {
       width: 50%;
       height: 600px;
-
-      div {
-        height: 45px;
-        margin-top: 3rem;
-      }
     }
   }
 
@@ -149,6 +140,7 @@ export const ContainerAbout = styled.section`
 `;
 
 export const ContainerPrizes = styled.section`
+  max-width: 1200px;
   width: 90%;
   height: 660px;
   display: flex;

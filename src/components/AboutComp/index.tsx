@@ -12,13 +12,15 @@ function AboutComp() {
           </div>
           <span>
             <FaCheck />
-            Desde 2002 no mercado corporativo e com mais de 21.000 clientes
-            atendidos em todo Brasil.
+            Desde 2002 no mercado corporativo. Entregamos inteligência, inovação
+            e confiança nos recursos tecnológicos existentes no mercado
+            corporativo.
           </span>
           <span>
             <FaCheck />A ALTATECH é uma empresa com foco em projetos de
             tecnologia, segurança da informação, consultoria e revenda das
-            principais marcas na área de tecnologia.
+            principais marcas na área de tecnologia. Estamos entre as maiores
+            empresas de serviços em tecnologia do Norte do Paraná.
           </span>
         </div>
         <div className="finale">
@@ -30,8 +32,16 @@ function AboutComp() {
           </span>
           <span>
             <FaCheck />
-            Nossos pilares são: segurança, contingência, colaboração e
+            Nosso time é formado por pessoas que se tornam especialistas ao
+            longo da sua trajetória, crescem junto a empresa se baseando em
+            nossos pilares que são a segurança, contingência, colaboração e
             produtividade.
+          </span>
+          <span>
+            <FaCheck />
+            Em março de 2020, um novo caminho tomou forma e assim demos início a
+            nossa Nuvem Privada, com nosso próprio Datacenter, onde originou-se
+            os primeiros produtos criados pela Altatech.
           </span>
         </div>
       </ContainerAbout>
