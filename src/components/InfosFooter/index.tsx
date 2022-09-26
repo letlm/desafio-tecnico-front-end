@@ -55,7 +55,7 @@ function InfosFooter() {
           </div>
           <div className="center-left">
             <a href="/about">Sobre</a>
-            <a href="/">Contato</a>
+            <a href="/contact">Contato</a>
             <a href="/">LGPD</a>
             <ModalFooter />
           </div>
