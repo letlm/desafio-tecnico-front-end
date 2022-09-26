@@ -1,8 +1,8 @@
 import { Container, Context, Line } from "./styles";
 import Altatech from "../../assets/Altatech_logo_white.svg";
 import { BsFillArrowUpCircleFill, BsWhatsapp } from "react-icons/bs";
-import { Lotties } from "./lotties.db";
-import Lottie from "react-lottie";
+import { LottiesAnime } from "./lotties.db";
+import Lottie from "react-lottie-player";
 import Carousel from "react-simply-carousel";
 import { useState } from "react";
 
@@ -52,12 +52,13 @@ function DashboardView() {
             autoplay={true}
             infinite={true}
           >
-            {Lotties.map((item, index) => (
-              <div className="anime">
+            {LottiesAnime.map((item, index) => (
+              <div className="anime" key={index}>
                 <Lottie
-                  options={{ animationData: item.animationData }}
-                  width={290}
-                  height={290}
+                  loop
+                  animationData={item.animationData}
+                  play
+                  style={{ width: 290, height: 290 }}
                 />
                 <span>{item.text}</span>
               </div>

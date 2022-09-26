@@ -1,4 +1,4 @@
-import Lottie from "react-lottie";
+import Lottie from "react-lottie-player";
 import { Container } from "./styles";
 import business from "../../animations/business.json";
 import { useHistory } from "react-router-dom";
@@ -23,7 +23,12 @@ function AboutHome() {
             <span> Uma das únicas a cumprir 100% dos projetos entregues</span>
           </div>
           <div className="about">
-            <Lottie options={{ animationData: business }} height={200} />
+            <Lottie
+              loop
+              animationData={business}
+              style={{ height: 200 }}
+              play
+            />
             <button onClick={() => handleClick("/about")}>
               Saiba mais sobre a Altatech
             </button>
