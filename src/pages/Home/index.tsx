@@ -10,6 +10,7 @@ import DashboardProducts from "../../components/DashboardProducts";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import AboutHome from "../../components/AboutHome";
 
 function Home() {
   useEffect(() => {
@@ -25,6 +26,7 @@ function Home() {
       </MediaQuery>
       <main className="container">
         <DashboardView />
+        <AboutHome />
         <DashboardContent />
         <DashboardProducts />
         <Partners />
