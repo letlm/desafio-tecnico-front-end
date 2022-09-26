@@ -17,7 +17,7 @@ export default createGlobalStyle`
             border-radius: 10px;
         }
         ::-webkit-scrollbar-track {
-            background-color: var(--primary-2)
+            background-color: var(--primary-1)
         }
     }
 

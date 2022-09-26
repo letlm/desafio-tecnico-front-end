@@ -22,6 +22,7 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     flex-direction: column;
+    max-width: 1200px;
 
     @media (min-width: 342px) {
       width: 90%;
@@ -57,13 +58,13 @@ export const Container = styled.div`
     }
 
     button:hover {
-      background-color: var(--primary-2);
+      background-color: var(--primary-1);
       border: 1px solid var(--primary-3);
     }
 
     button:after {
       content: "";
-      background: var(--primary-1);
+      background: var(--primary-2);
       position: absolute;
       z-index: -1;
       left: -20%;

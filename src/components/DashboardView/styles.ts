@@ -35,6 +35,7 @@ export const Container = styled.div`
 export const Context = styled.div`
   margin-top: 10px;
   width: 90%;
+  max-width: 1200px;
   height: 100%;
   display: flex;
   flex-direction: column-reverse;
