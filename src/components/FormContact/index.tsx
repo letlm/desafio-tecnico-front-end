@@ -1,6 +1,6 @@
 import Form from "./Form";
 import { Container } from "./styles";
-import Lottie from "react-lottie";
+import Lottie from "react-lottie-player";
 import contact from "../../animations/contact.json";
 
 function FormContact() {
@@ -8,7 +8,12 @@ function FormContact() {
     <Container>
       <Form />
       <section className="right">
-        <Lottie options={{ animationData: contact }} width={290} height={290} />
+        <Lottie
+          loop
+          animationData={contact}
+          style={{ width: 290, height: 290 }}
+          play
+        />
       </section>
     </Container>
   );

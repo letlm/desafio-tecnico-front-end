@@ -7,7 +7,7 @@ interface ImgDivs {
 export const Container = styled.div`
   width: 100%;
   height: 900px;
-  background-color: var(--primary-3);
+  background-color: var(--primary-1);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,6 +19,7 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    max-width: 1200px;
   }
 `;
 

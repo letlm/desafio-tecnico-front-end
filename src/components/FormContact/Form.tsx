@@ -46,8 +46,8 @@ function Form() {
             required
             {...register("email")}
           />
-          <select {...register("profile")}>
-            <option value="" disabled selected>
+          <select {...register("profile")} defaultValue={"DEFAULT"}>
+            <option value="DEFAULT" disabled>
               Selecionar perfil da empresa
             </option>
             <option value="comercio">

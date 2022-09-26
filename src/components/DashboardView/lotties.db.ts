@@ -5,7 +5,7 @@ import enginee from "../../animations/enginee.json";
 import search from "../../animations/search.json";
 import cloud from "../../animations/cloud.json";
 
-export const Lotties = [
+export const LottiesAnime = [
   { animationData: cloud, text: "Migre seu servidor para nuvem!" },
   {
     animationData: screens,
