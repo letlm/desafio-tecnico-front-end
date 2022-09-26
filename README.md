@@ -1,46 +1,67 @@
-# Getting Started with Create React App
+# Desafio Front-end Altatech
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### :memo: Descrição do projeto:
 
-## Available Scripts
+- Homepage do site Altatech
+<p align="center">
+ <a href="#objetivo">Objetivo</a> •
+ <a href="#tecnologias">Tecnologias e Bibliotecas</a> • 
+ <a href="#instalacao">Instalação</a> • 
+ <a href="#link">Link da aplicação</a>
+</p>
 
-In the project directory, you can run:
+<h4 id="objetivo">:dart: Objetivo</h4>
+- Releitura da Homepage do site Altatech
 
-### `yarn start`
+<h4 id="tecnologias">:hammer_and_wrench: Tecnologias e Bibliotecas</h4>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [Node.js](https://nodejs.org/en/)
+- [React](https://pt-br.reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Styled-components](https://styled-components.com/)
+- [Mui-material](https://mui.com/pt/)
+- [React-hook-form](https://react-hook-form.com/)
+- [React-icons](https://react-icons.github.io/react-icons)
+- [React-lottie-player](https://www.npmjs.com/package/react-lottie-player)
+- [React-responsive](https://www.npmjs.com/package/react-responsive)
+- [React-simply-carousel](https://npm.io/package/react-simply-carousel)
+- [React-toastify](https://www.npmjs.com/package/react-toastify)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<h4 id="instalacao">:rocket: Instalação</h4>
 
-### `yarn test`
+##### :ballot_box_with_check: Pré-requisitos:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Você precisa ter instalado em sua máquina as seguintes ferramentas:
+  [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/).
+- Além disto, um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
-### `yarn build`
+##### :game_die: Instalando
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Clone este repositório:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+$ git clone <git@github.com:letlm/desafio-tecnico-front-end.git>
 
-### `yarn eject`
+# Entre na pasta em que você clonou este repositório e o acesse:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+$ cd desafio-front-end
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Abra no editor de código:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+$ desafio-front-end code .
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+# Instale as dependências no terminal
 
-## Learn More
+$ yarn install
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Execute a aplicação em modo de desenvolvimento
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+$ yarn start
+
+# O servidor iniciará na porta:3000
+# Caso o servidor não abra em seu navegador automaticamente, acesse <http://localhost:3000>
+```
+
+<h4 id="link">:computer: Link da aplicação</h4>
+- https://altatech-letlm.vercel.app/
